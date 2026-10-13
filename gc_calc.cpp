@@ -9,6 +9,11 @@ int main() {
 
     for (char base : seq) {
         if (base == 'G' || base == 'C') {
+base != 'A' && base != 'T' && base != 'G' && base != 'C') {
+
+}
+
+cerr << "Warning: Non-canonical DNA character detected: "<< base << endl;
             gc_count++;
         }
     }
